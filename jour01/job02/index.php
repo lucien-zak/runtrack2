@@ -1,6 +1,7 @@
 <?php
 
-//echo "Hello LaPlateforme !";
-/*echo "Hello LaPlateforme !";*/
+echo "Hello LaPlateforme !"; //ceci est un commentaire sur une ligne
+echo "Hello LaPlateforme !";/*ceci est un commentaire
+sur plusieurs lignes */
 
 ?>
