@@ -22,12 +22,4 @@ $mybool = true;
 echo $mybool;
 $mybool = false;
 echo $mybool;
-echo '<br>';
-
-if ($mybool == true) {
-    echo "true";   
-} 
-else {
-    echo "false";
-}
 ?>

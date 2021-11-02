@@ -1,18 +1,16 @@
 <?php
-
 $car = "Lucien";
 $age = 31;
 $statut = true;
 $ageexacte = 31.5;
-
 ?>
-
 <table>
     <thead>
         <tr>
             <th>Type</th>
             <th>Nom</th>
             <th>Valeur</th>
+
         <tr>
     </thead>
     <tbody>
