@@ -7,6 +7,7 @@ echo $str2.$str1.$str3;
 ?>
 
 <br>
+<br>
 
 <?php
 $val = 6;
