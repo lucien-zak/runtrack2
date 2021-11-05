@@ -8,6 +8,6 @@ for ($i = 0 ; isset($str[$i]) ; $i++ ) {
 
 }
 
-echo "La variable str contient".$compteur."caractères";
+echo "La variable str contient ".$compteur." caractères";
 
 ?>

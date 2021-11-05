@@ -13,8 +13,8 @@ $dic = [
 <table>
     <thead>
         <tr>
-            <th>voyelles</th>
-            <th>consonnes</th>
+            <th>Voyelles</th>
+            <th>Consonnes</th>
         </tr> 
     <tbody>
         <tr>
