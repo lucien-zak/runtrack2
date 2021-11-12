@@ -13,8 +13,25 @@ function gras($str) {
         }
         return $str;    } 
 
-function cesar($str, $decalage = 2) {
-    $alpahbet = ["a","A","b","B","c","C","d","D","e","E","f","F","g","G","h","H","i","I","j","J","k","K","l","L","m","M","n","N","o","O","p","P","Q","q","R","r","S","s","T","t","U","u","V","v","W","w","X","x","Y","y","Z","z"];
+function cesar($str, $decalage) {
+    $alpahbet = ["a","A","b","B","c","C","d","D","e","E","f","F","g","G","h","H","i","I","j","J","k","K","l","L","m","M","n","N","o","O","p","P","q","Q","r","R","s","S","t","T","u","U","v","V","w","W","x","X","y","Y","z","Z","a","A","b","B","c","C","d","D","e","E","f","F","g","G","h","H","i","I","j","J","k","K","l","L","m","M","n","N","o","O","p","P","q","Q","r","R","s","S","t","T","u","U","v","V","w","W","x","X","y","Y","z","Z"];
+    for ($i = 0; isset($str[$i]); $i++){
+        for ($j = 0; isset($alpahbet[$j]); $j++){
+            if ($alpahbet[$j] == $str[$i]) {
+                echo $alpahbet[$j + $decalage * 2];
+                break;
+            }
+        }
+    }
+}
+
+function plateforme($str){
+    for ($compteur = 0; isset($str[$compteur]); $compteur++) {}
+    if ($str[$compteur - 1] == "e" or $str[$compteur - 1] == "E"  && $str[$compteur - 2] = "m" or $str[$compteur - 2] = "M" ){
+        echo $str."_";
+    }
+    else {echo $str;}
+    
 }
 ?>
 
@@ -27,6 +44,7 @@ function cesar($str, $decalage = 2) {
         <option value="cesar">cesar</option>
         <option value="plateforme">plateforme</option>
     </select>
+    <input type="number" name="decalage" placeholder="si décalage" value = 2>
     <input type="submit">
 </form>
 
@@ -39,7 +57,11 @@ if ($_POST["fonction"] == "gras") {
     echo $resultat;
 }
 if ($_POST["fonction"] == "cesar") {
-    $resultat = cesar($_POST["str"]);
+    $resultat = cesar($_POST["str"],$_POST['decalage']);
+    echo $resultat;
+}
+if ($_POST["fonction"] == "plateforme") {
+    $resultat = plateforme($_POST["str"]);
     echo $resultat;
 }
 
