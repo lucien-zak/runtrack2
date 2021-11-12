@@ -15,7 +15,7 @@ function gras($str) {
 
 function cesar($str, $decalage = 2) {
     $alpahbet = ["a","A","b","B","c","C","d","D","e","E","f","F","g","G","h","H","i","I","j","J","k","K","l","L","m","M","n","N","o","O","p","P","Q","q","R","r","S","s","T","t","U","u","V","v","W","w","X","x","Y","y","Z","z"];
-    
+}
 ?>
 
 
